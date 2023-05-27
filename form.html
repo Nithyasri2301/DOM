@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #color{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+  
+        <label for="">Enter a Name</label>
+        <input id="id" type="text"><span id="color"></span><br>
+        <button id="click">Click</button>
+    <script>
+        var a=document.getElementById("id")
+        var b=document.getElementById("click")
+        var c=document.getElementById("color")
+        b.addEventListener("click",()=>{
+         
+            if(a.value==""){
+                c.innerHTML="*input box must be filled"
+            }
+
+        })
+
+</script>
+
+
+</body>
+</html>
